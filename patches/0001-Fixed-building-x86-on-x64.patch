@@ -1,0 +1,25 @@
+From 9f8b4255018462840fcf3558f321a75ffbf59127 Mon Sep 17 00:00:00 2001
+From: KOLANICH <KOLANICH@user.github.com>
+Date: Fri, 14 Feb 2020 11:25:12 +0300
+Subject: [PATCH] Fixed building x86 on x64
+
+---
+ configs/config.x86_64 | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/configs/config.x86_64 b/configs/config.x86_64
+index 19647b6..c908194 100644
+--- a/configs/config.x86_64
++++ b/configs/config.x86_64
+@@ -9,7 +9,7 @@
+ 
+ # ELF32
+    # Have elf32 ?
+-   ELF32             := yes
++   ELF32             := no
+    # Special flags to compile elf32
+    FLAGS_32          := -m32
+    # Flags to compile C to asm elf32 (mostly to be sure calling convention)
+-- 
+2.20.1
+
